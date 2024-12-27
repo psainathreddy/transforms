@@ -1,0 +1,60 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    border-radius: 7px solid;
+    transition: o.4s;
+    background-color: wheat;
+}
+body{
+    position: relative;
+}
+a {
+    position: absolute;
+top:20px;
+text-decoration: none;
+border:2px solid black;
+background-color: green;
+color: white;
+left:40px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+    width: 40%;
+    gap: 20px;
+}
+
+.first,
+.one,
+.two,
+.three {
+    color: white;
+    background-color: green;
+    padding: 10px;
+    width: fit-content;
+}
+
+.first:hover~.container {
+    transform: translate(50px, 40px);
+}
+
+.one:hover~.container {
+    transform: rotate(40deg);
+}
+
+.two:hover~.container {
+    transform: scale(2);
+}
+
+.three:hover~.container {
+    transform: skewX(20deg);
+}
